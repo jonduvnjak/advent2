@@ -5,7 +5,7 @@ fn main() {
         let mut counter: i32 = 0;
             let mut pw_char_iter = match pw_iter.next() {
                 Some(x) => x.chars(),
-                None => {break}
+                None => break
             };
             
             loop {
@@ -18,7 +18,7 @@ fn main() {
                             //println!("{}", p);
                         }
                     }
-                    None => {break}
+                    None => break
                 }
             }
             pw_counter_vec.push(counter);
@@ -46,9 +46,9 @@ fn main() {
                     answer_counter += 1;
                     println!("{} {}",a,b);
                 }
-                None => {break}
+                None => break
             }
-            None => {break}
+            None => break
         }
             
     }
